@@ -33,9 +33,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/@watergis/postgis2mbtiles/
-          # # Defaults to the user or organization that owns the workflow file
-          # scope: '@watergis'
+          registry-url: https://npm.pkg.github.com/
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@watergis'
       - run: npm ci
       - run: npm install
       - run: npm run build
