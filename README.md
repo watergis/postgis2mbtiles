@@ -40,7 +40,7 @@ $ npm run test
 ```
 
 ## Usage
-See also [example.js](./test/test.js)
+See also [test.js](./test/test.js)
 ```js
 const {postgis2mbtiles} = require('postgis2mbtiles');
 const config = require('./config');
