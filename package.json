@@ -1,6 +1,6 @@
 {
   "name": "@watergis/postgis2mbtiles",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A module extracting the data from PostGIS to mbtiles by using tippecanoe.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
