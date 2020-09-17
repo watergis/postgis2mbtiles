@@ -64,7 +64,7 @@ db: {
     user:'postgres',
     password:'Your password',
     host:'localhost',
-    post:5432,
+    port:5432,
     database:'Your database name',
 },
 ```

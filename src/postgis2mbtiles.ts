@@ -3,19 +3,11 @@ import { execSync } from 'child_process';
 import { postgis2geojson } from '@watergis/postgis2geojson';
 
 type Config = {
-  db: DbConfig; //DB Settings
+  db: any; //DB Settings
   mbtiles: string; //File path for mbtiles of vectortiles
   minzoom: number; //Min zoom level given to tippecanoe
   maxzoom: number; //Max zoom level given to tippecanoe
   layers: Layer[]; //List of layer to define SQL for GeoJSON
-};
-
-type DbConfig = {
-  user: string;
-  password: string;
-  host: string;
-  post: string;
-  database: string;
 };
 
 type Layer = {

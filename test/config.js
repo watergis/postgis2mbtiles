@@ -15,7 +15,7 @@ module.exports = {
       user:env.db_user,
       password:env.db_password,
       host:env.db_host,
-      post:env.db_port,
+      port:env.db_port,
       database:env.db_name,
     },
     mbtiles: export_dir + '/narok.mbtiles',
