@@ -4,6 +4,9 @@ import { postgis2geojson } from '@watergis/postgis2geojson';
 
 type Config = {
   db: any; //DB Settings
+  name: string;
+  description: string;
+  attribution: string;
   mbtiles: string; //File path for mbtiles of vectortiles
   minzoom: number; //Min zoom level given to tippecanoe
   maxzoom: number; //Max zoom level given to tippecanoe
@@ -51,7 +54,7 @@ class postgis2mbtiles {
           }
           const cmd = `tippecanoe -rg -z${this.config.maxzoom} -Z${
             this.config.minzoom
-          } -o ${mbtiles} ${geojsonfiles.join(' ')}`;
+          } --name="${this.config.name}" --description="${this.config.description}" --attribution="${this.config.attribution}" -o ${mbtiles} ${geojsonfiles.join(' ')}`;
 
           execSync(cmd).toString();
 

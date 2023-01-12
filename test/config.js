@@ -18,7 +18,10 @@ module.exports = {
       port:env.db_port,
       database:env.db_name,
     },
-    mbtiles: export_dir + '/narok.mbtiles',
+    name: 'narwassco_vectortiles',
+    description: 'Vector tiles for water & sanitation data in Narok water, Kenya',
+    attribution: '©Narok Water and Sewerage Services Co., Ltd.',
+    mbtiles: export_dir + '/narok.pmtiles',
     minzoom: 10,
     maxzoom: 16,
     layers : [

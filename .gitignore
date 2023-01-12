@@ -1,5 +1,7 @@
 *.geojson
 *.mbtiles
+*.pmtiles
+.DS_Store
 
 dist/
 es6/
